@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Academy Project 1</title>
+
+    <style>
+        span{
+            font-size: 20px;
+            text-shadow: none;
+        }
+
+        h1{
+            font-size: 50px;
+            margin-top: 5%;
+            margin-left: 10%;
+
+        }
+
+        .intro{
+            font-size: 20px;
+            margin-top: 2%;
+            margin-left: 10%;
+        }
+
+        .img-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 5%;
+        }
+
+        .images{
+            margin: 10px;
+            text-align: center;
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 1rem;
+
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+        }
+
+        img{
+            width: 20rem;
+            height: 15rem;
+            border-radius: 10px;
+        }
+
+        .description{
+            font-size: 1.2rem;
+            margin-top: 5px;
+        }
+
+        .expand-button{
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .expand-button:hover{
+            background-color: #45a049;
+        }
+
+        .expanded-description{
+            display: none;
+            font-size: 1rem;
+            margin-top: 10px;
+            color: #555;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><span style="color: turquoise;;">Let's Holiday</span> <br>Together</h1>
+        <p class="intro">A website to plan your next holiday</p>
+    </div>
+    
+
+    <div class="img-container">
+        <div class="images">
+            <img src="images/boat.jpg" alt="boat">
+            <p class="description">Cruises around the island</p>
+            <button class="expand-button">Learn More</button>
+            <p class="expanded-description">This cruise offers a you the chance to explore <br> the island via the seas, cruise like a PIRATE ! </p>
+        </div>
+
+        <div class="images">
+            <img src="images/plane.jpg" alt="plane">
+            <p class="description">Exclusive flights for Island Tours</p>
+            <button class="expand-button">Learn More</button>
+            <p class="expanded-description">This flight is exclusive to Island Tours and <br> offers you a chance to sour like a bird in the sky</p>
+        </div>
+
+        <div class="images">
+            <img src="images/yacht.jpg" alt="hotel">
+            <p class="description">Book a yacht</p></p>
+            <button class="expand-button">Learn More</button>
+            <p class="expanded-description">Cruise like a VIP in a yacht with exclusive <br> services and luxury</p> 
+        </div>
+
+        <div class="images">
+            <img src="images/plane2.jpg" alt="hotel">
+            <p class="description">Flights to your destination</p>
+            <button class="expand-button">Learn More</button>
+            <p class="expanded-description"> Book a flight to your destination, get from <br> A to Z in the sky</p>
+        </div>
+
+        <div class="images">
+            <img src="images/cablecar.jpg" alt="hotel">
+            <p class="description">Cable cars</p>
+            <button class="expand-button">Learn More</button>
+            <p class="expanded-description"> Experience the thrill of a cable car, and get <br> to the top of our beautiful island mountains</p>
+        </div>
+
+        <div class="images">
+            <img src="images/city.jpg" alt="hotel">
+            <p class="description">Experience Our Vibrant City life</p>
+            <button class="expand-button">Learn More</button>
+            <p class="expanded-description">Explore our vibrant city life, and get to know our <br> locals</p>
+        </div>
+
+
+    </div>
+</body>
+</html>
