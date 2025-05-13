@@ -73,6 +73,37 @@
             color: #555;
         }
 
+        .images-section{
+            background-color: #f0f0f0;
+            padding: 20px;
+            margin: 20px;
+            max-width: 900px;
+            float: left;
+        }
+
+        .links-section{
+            padding: 20px;
+            margin: 20px;
+            max-width: 900px;
+        }
+
+        .intro{
+           display: flex;
+        }
+
+        a{
+            text-decoration: none;
+            padding: 8px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+        }
+         
+        li{
+            list-style-type: none;
+            margin-bottom: 20px;
+        }
+     
+
     </style>
 </head>
 <body>
@@ -80,7 +111,10 @@
         <h1><span style="color: turquoise;;">Let's Holiday</span> <br>Together</h1>
         <p class="intro">A website to plan your next holiday</p>
     </div>
-    
+
+    <div class="intro">
+        
+<section class="images-section">
 
     <div class="img-container">
         <div class="images">
@@ -127,5 +161,32 @@
 
 
     </div>
+</section>
+
+
+<section class="links-section">
+    <div class="links-container">
+        <h2>My Portfolio Links</h2>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/tatenda-moyo-576235220/">LinkedIn</a></li>
+            <li><a href="https://github.com/TMoyo22">GitHub</a></li>
+            <li><a href="https://teewebportfolio.vercel.app/">Portfolio Website</a></li>
+        </ul>
+    </div>
+
+</section>
+</div>
+
+    <script>
+        const expandButtons = document.querySelectorAll('.expand-button');
+        const expandedDescriptions = document.querySelectorAll('.expanded-description');
+        
+        expandButtons.forEach((button, index) => {
+            button.addEventListener('click', () => {
+                expandedDescriptions[index].style.display = 
+                    expandedDescriptions[index].style.display === 'none' ? 'block' : 'none';
+            });
+        });
+    </script>
 </body>
 </html>
